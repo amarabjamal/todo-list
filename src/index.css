@@ -1,20 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 body {
-  margin: 0;
+  background-color: whitesmoke;
 }
 
-.TodoItem-wrapper {
-  background: #333;
+.todo-list {
+  background-color: #fff;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #efefef;
+  padding: 30px;
+}
+
+.todo-item {
+  width: 70%;
   padding: 10px;
-  border-bottom: 2px solid #888;
+  border-bottom: 1px solid #cecece;
   display:  flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 
-.TodoItem-wrapper p{
+.todo-item p{
   margin-left: 10px;
   color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 17px;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
 }

@@ -4,7 +4,7 @@ import TodoItem from "./components/TodoItem"
 
 function App() {
     return (
-        <div>
+        <div className="todo-list">
             <TodoItem />
             <TodoItem />
             <TodoItem />

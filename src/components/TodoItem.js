@@ -9,7 +9,7 @@ function TodoItem() {
     }
     
     return (
-        <div className="TodoItem-wrapper">
+        <div className="todo-item">
             <input type="checkbox" />
             <p style={styles}>Placeholder text here</p>
         </div>
