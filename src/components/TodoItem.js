@@ -10,7 +10,11 @@ function TodoItem(props) {
     
     return (
         <div className="todo-item">
-            <input type="checkbox" checked={props.item.completed}/>
+            <input 
+                type="checkbox" 
+                checked={props.item.completed}
+                onChange={() => console.log("Changed!")}
+            />
             <p style={styles}>{props.item.text}</p>
         </div>
     )
