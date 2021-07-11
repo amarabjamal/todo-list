@@ -31,4 +31,7 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 100;
   font-size: 15px;
+  background-color: #888;
+  padding: 5px 15px;
+  border-radius: 15px;
 }
