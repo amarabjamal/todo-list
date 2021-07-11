@@ -35,6 +35,7 @@ class App extends Component {
         
         return (
             <div className="todo-list">
+                <h1>My todo list</h1>
                 {todoItems}
             </div>
         )    
