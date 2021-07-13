@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useEffect } from "react"
+import randomColor from "randomcolor"
 
 function TodoItem(props) {
 
@@ -8,6 +9,13 @@ function TodoItem(props) {
         color: "#cdcdcd",
         backgroundColor: "#eee"
     }
+
+    const incompleteStyle = {
+        backgroundColor: randomColor({
+                                        luminosity: 'dark',
+                                        hue: 'green'
+                                    })
+    }
     
     return (
         <div className="todo-item">
@@ -16,7 +24,7 @@ function TodoItem(props) {
                 checked={props.item.completed}
                 onChange={() => props.handleChange(props.item.id)}
             />
-            <p style={props.item.completed ? completedStyle : null}>{props.item.text}</p>
+            <p style={props.item.completed ? completedStyle : incompleteStyle}>{props.item.text}</p>
         </div>
     )
 }
